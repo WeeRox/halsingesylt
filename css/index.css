@@ -29,3 +29,8 @@ header nav a {
 	text-decoration: none;
 	font-family: 'Libre Baskerville', serif;
 }
+
+header nav a:hover {
+	color: white;
+	background-color: #9E3223;
+}
