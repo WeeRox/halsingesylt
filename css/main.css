@@ -2,3 +2,16 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+	font-family: 'Libre Baskerville', serif;
+}
+
+p {
+	width: 45em;
+	font-family: 'Poppins', sans-serif;
+}
