@@ -35,7 +35,15 @@ header nav a:hover {
 	background-color: #9E3223;
 }
 
-section {
+.hero-group {
+	display: flex;
+}
+
+.hero-group > * {
+	flex: 1;
+}
+
+.hero-full, .hero-half {
 	height: 500px;
 	margin: 2em;
 }
