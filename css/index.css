@@ -34,3 +34,28 @@ header nav a:hover {
 	color: white;
 	background-color: #9E3223;
 }
+
+section {
+	display: flex;
+	align-items: center;
+	margin: 2em;
+}
+
+.hero-full {
+	height: 500px;
+}
+
+.hero-image {
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.hero-image img {
+	height: 100%;
+}
+
+section > * {
+	flex: 1;
+	margin: 2em;
+}
