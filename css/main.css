@@ -1,3 +1,42 @@
+/* START: header styling */
+header {
+	width: 100%;
+	display: flex;
+}
+
+header #logo {
+	flex: 2;
+}
+
+header #logo img {
+	width: 100%;
+	max-height: calc(100% - 2em);
+	max-width: calc(100% - 2em);
+	padding: 1em;
+}
+
+header nav {
+	display: flex;
+	flex: 8;
+
+	margin-left: 50px;
+}
+
+header nav a {
+	padding: 20px 20px;
+	align-self: center;
+
+	color: black;
+	text-decoration: none;
+	font-family: 'Libre Baskerville', serif;
+}
+
+header nav a:hover {
+	color: white;
+	background-color: #9E3223;
+}
+/* END: header styling */
+
 html, body {
 	margin: 0;
 	padding: 0;
