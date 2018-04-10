@@ -1,0 +1,16 @@
+h1 {
+	text-align: center;
+}
+
+section {
+	display: flex;
+}
+
+#text, #image {
+	flex: 1;
+	margin: 2em;
+}
+
+#image img {
+	width: 100%;
+}
