@@ -51,6 +51,6 @@ h2 {
 }
 
 p {
-	width: 45em;
+	max-width: 45em;
 	font-family: 'Poppins', sans-serif;
 }
