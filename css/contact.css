@@ -9,10 +9,11 @@ section {
 #message, #map {
 	flex: 1;
 	margin: 2em;
+	font-size: 11px; /* make sure that 1 em is same size for both */
 }
 
 #map iframe {
-	height: 30em;
+	height: 32em;
 	width: 100%;
 	margin: 1em 0;
 }
@@ -30,7 +31,7 @@ input, textarea {
 }
 
 textarea {
-	height: 19em;
+	height: 15em;
 }
 
 input[type=submit] {
