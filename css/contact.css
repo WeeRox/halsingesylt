@@ -22,12 +22,19 @@ input, textarea {
 	display: block;
 	width: calc(100% - 2em);
 	height: 2em;
-	background-color: #ccc;
+	background-color: #78909C;
+	color: white;
 	border: none;
 	margin: 1em 0;
 	padding: 1em;
 	box-sizing: content-box;
 	font-family: 'Poppins', sans-serif;
+}
+
+/* change placeholder color and opacity */
+input::placeholder, textarea::placeholder {
+	color: white;
+	opacity: 0.5;
 }
 
 textarea {
