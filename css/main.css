@@ -51,7 +51,7 @@ h2 {
 	font-family: 'Libre Baskerville', serif;
 }
 
-p {
+li, p {
 	max-width: 45em;
 	font-family: 'Poppins', sans-serif;
 }
