@@ -44,6 +44,7 @@ html, body {
 
 h1 {
 	font-family: 'Libre Baskerville', serif;
+	text-align: center; /* h1 is mainly used as a centered page header */
 }
 
 h2 {
