@@ -15,6 +15,8 @@ $(document).ready(function() {
 
 		popup.on('click.hide', close);
 	});
+
+	$(".popup-close").on('click', close);
 });
 
 function close(event) {
