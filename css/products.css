@@ -1,3 +1,13 @@
+@keyframes product {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 #products {
 	display: flex;
 	flex-wrap: wrap;
@@ -37,10 +47,10 @@
 	height: 80vh;
 	width: 80vw;
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 50% !important;
+	left: 50% !important;
 	transform: translate(-50%, -50%);
-	transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+	transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s, transform 0.5s;
 	transition-timing-function: ease-in-out;
 }
 
@@ -55,6 +65,11 @@
 
 .popup.popup-show .popup-content {
 	display: block;
+	animation-name: product;
+	animation-duration: 1s;
+	animation-delay: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
 }
 
 .popup-close {
@@ -70,6 +85,7 @@
 }
 
 .product-image, .product-info {
+	margin: 2em;
 	flex: 1;
 	display: flex;
 	align-items: center;

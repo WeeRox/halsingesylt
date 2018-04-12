@@ -2,6 +2,12 @@
 var popup;
 
 $(document).ready(function() {
+	$(".card").each(function () {
+		$(this).css('top', $(this).position().top);
+		$(this).css('left', $(this).position().left);
+	});
+
+
 	$(".popup").on('click.show', function() {
 
 		popup = $(this);
