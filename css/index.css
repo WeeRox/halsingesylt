@@ -44,6 +44,7 @@
 .hero-half {
 	width: 50%;
 	position: relative;
+	z-index: -1;
 }
 
 .hero-half .hero-image img {
@@ -52,4 +53,10 @@
 
 .hero-half .hero-text {
 	text-align: center;
+	margin-top: 2em;
+}
+
+.hero-black {
+	background-color: black;
+	color: white;
 }
