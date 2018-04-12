@@ -1,0 +1,132 @@
+@keyframes product {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+#products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.card {
+	height: 15em;
+	width: 15em;
+}
+
+.card-content {
+	height: 100%;
+}
+
+.card-content a {
+	display: block;
+	height: 100%;
+	color: black;
+	text-decoration: none;
+}
+
+.card-content img {
+	display: block;
+	height: 70%;
+	margin: 0 auto;
+}
+
+.card-content h2 {
+	margin: 0;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.popup.popup-show {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.4);
+	transition: background-color 0.5s;
+	transition-timing-function: ease-in;
+}
+
+.popup.popup-show .card {
+	background-color: white;
+	height: 80vh;
+	width: 80vw;
+	position: absolute;
+	top: 50% !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%);
+	transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s, transform 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.popup.popup-show .card-content {
+	display: none;
+}
+
+.popup-content {
+	display: none;
+	height: 100%;
+}
+
+.popup.popup-show .popup-content {
+	display: block;
+	animation-name: product;
+	animation-duration: 1s;
+	animation-delay: 0.4s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+.popup-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 1em;
+}
+
+.popup-content section {
+	display: flex;
+	height: 100%;
+}
+
+.product-image, .product-info {
+	margin: 2em;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.product-image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product-option {
+	display: inline-block;
+	width: 4em;
+	height: 4em;
+	border: 2px solid #78909C;
+	text-align: center;
+	margin-right: 2em;
+	line-height: 4em;
+}
+
+.product-option:hover {
+	border-color: #9E3223;
+}
+
+.product-option-selected {
+	background-color: #9E3223;
+	border-color: #9E3223;
+	color: white;
+}

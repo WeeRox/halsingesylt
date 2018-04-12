@@ -51,7 +51,23 @@ h2 {
 	font-family: 'Libre Baskerville', serif;
 }
 
+h3 {
+	font-family: 'Libre Baskerville', serif;
+}
+
 li, p {
 	max-width: 45em;
 	font-family: 'Poppins', sans-serif;
+}
+
+.card {
+	margin: 1em;
+	padding: 1em;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 -2px 8px -4px rgba(0,0,0,0.2);
+	transition: box-shadow 0.3s;
+}
+
+.card-hover:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 -4px 16px -4px rgba(0,0,0,0.2);
 }
