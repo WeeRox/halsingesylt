@@ -1,5 +1,7 @@
 /* global value that holds current popup */
 var popup;
+var popup_image;
+var popup_options;
 
 $(document).ready(function() {
 	$(".card").each(function () {
@@ -20,6 +22,19 @@ $(document).ready(function() {
 		});
 
 		popup.on('click.hide', close);
+
+		/* change image when clicking on .product-option */
+		popup_image = popup.find(".product-image img");
+		popup_options = popup.find(".product-option");
+
+		popup_options.each(function() {
+			$(this).on('click', function() {
+				popup_options.removeClass("product-option-selected");
+				$(this).addClass("product-option-selected");
+				console.log("src: " + $(this).attr('id'));
+				popup_image.attr("src", "/img/" + $(this).attr('id') + ".jpg");
+			});
+		});
 	});
 
 	$(".popup-close").on('click', close);
