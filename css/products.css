@@ -44,6 +44,10 @@ section {
 	transition-timing-function: ease-in-out;
 }
 
+.popup.popup-show .card-content {
+	display: none;
+}
+
 .popup-content {
 	display: none;
 }
