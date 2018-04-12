@@ -49,3 +49,10 @@ section {
 .popup-content.popup-show {
 	display: block;
 }
+
+.popup-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 1em;
+}
