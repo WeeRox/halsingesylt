@@ -1,0 +1,29 @@
+section {
+	display: flex;
+}
+
+#ingredients {
+	flex: 2;
+}
+
+#instructions {
+	flex: 3;
+}
+
+#empty {
+	flex: 1;
+}
+
+#ingredients, #instructions, #empty {
+	margin: 1em;
+}
+
+#ingredients > * {
+	float: right;
+}
+
+#ingredients ul {
+	max-width: 20em;
+	padding: 0;
+	list-style: none;
+}

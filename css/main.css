@@ -1,0 +1,73 @@
+/* START: header styling */
+header {
+	width: 100%;
+	display: flex;
+}
+
+header #logo {
+	flex: 2;
+}
+
+header #logo img {
+	width: 100%;
+	max-height: calc(100% - 2em);
+	max-width: calc(100% - 2em);
+	padding: 1em;
+}
+
+header nav {
+	display: flex;
+	flex: 8;
+
+	margin-left: 50px;
+}
+
+header nav a {
+	padding: 20px 20px;
+	align-self: center;
+
+	color: black;
+	text-decoration: none;
+	font-family: 'Libre Baskerville', serif;
+}
+
+header nav a:hover {
+	color: white;
+	background-color: #9E3223;
+}
+/* END: header styling */
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+	text-align: center; /* h1 is mainly used as a centered page header */
+}
+
+h2 {
+	font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+	font-family: 'Libre Baskerville', serif;
+}
+
+li, p {
+	max-width: 45em;
+	font-family: 'Poppins', sans-serif;
+}
+
+.card {
+	margin: 1em;
+	padding: 1em;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 -2px 8px -4px rgba(0,0,0,0.2);
+	transition: box-shadow 0.3s;
+}
+
+.card-hover:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 -4px 16px -4px rgba(0,0,0,0.2);
+}

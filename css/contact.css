@@ -1,0 +1,43 @@
+section {
+	display: flex;
+}
+
+#message, #map {
+	flex: 1;
+	margin: 2em;
+	font-size: 11px; /* make sure that 1 em is same size for both */
+}
+
+#map iframe {
+	height: 32em;
+	width: 100%;
+	margin: 1em 0;
+}
+
+input, textarea {
+	display: block;
+	width: calc(100% - 2em);
+	height: 2em;
+	background-color: #78909C;
+	color: white;
+	border: none;
+	margin: 1em 0;
+	padding: 1em;
+	box-sizing: content-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* change placeholder color and opacity */
+input::placeholder, textarea::placeholder {
+	color: white;
+	opacity: 0.5;
+}
+
+textarea {
+	height: 15em;
+}
+
+input[type=submit] {
+	background-color: #9E3223;
+	color: white;
+}
