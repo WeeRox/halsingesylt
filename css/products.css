@@ -28,9 +28,11 @@ section {
 	left: 0;
 	top: 0;
 	background-color: rgba(0,0,0,0.4);
+	transition: background-color 0.5s;
+	transition-timing-function: ease-in;
 }
 
-.card.popup-show {
+.popup.popup-show .card {
 	background-color: white;
 	height: 80vh;
 	width: 80vw;
@@ -38,7 +40,7 @@ section {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s;
+	transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
 	transition-timing-function: ease-in-out;
 }
 
@@ -46,7 +48,7 @@ section {
 	display: none;
 }
 
-.popup-content.popup-show {
+.popup.popup-show .popup-content {
 	display: block;
 }
 

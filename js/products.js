@@ -1,18 +1,26 @@
+/* global value that holds current popup */
+var popup;
+
 $(document).ready(function() {
 	$(".popup").on('click.show', function() {
 
-		$(this).addClass("popup-show");
-		$(this).find(".card").addClass("popup-show");
+		popup = $(this);
 
-		$(".card.popup-show").on('click.consume', function() {
+		popup.addClass("popup-show");
+
+		/* consume clicks on popup card so the popup background won't trigger close */
+		$(".popup.popup-show .card").on('click.consume', function() {
 			return false;
 		});
 
-		$(this).on('click.hide', function() {
-			$(this).removeClass("popup-show");
-			$(".card.popup-show").off('click.consume');
-			$(this).find(".card").removeClass("popup-show");
-			$(this).off('click.hide');
-		});
+		popup.on('click.hide', close);
 	});
 });
+
+function close(event) {
+	$(".popup.popup-show .card").off('click.consume');
+
+	popup.removeClass("popup-show");
+	popup.off('click.hide');
+	return false;
+}
