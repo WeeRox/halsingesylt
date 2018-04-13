@@ -2,18 +2,33 @@
 	display: flex;
 }
 
-.hero-group > * {
-	flex: 1;
-}
-
 .hero-full, .hero-half {
 	height: 500px;
 	margin: 2em;
 }
 
-.hero-full {
+.hero-full a {
 	display: flex;
 	align-items: center;
+
+	height: 100%;
+}
+
+.hero-half {
+	flex: 1;
+}
+
+.hero-half a {
+	display: block;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.hero-full a, .hero-half a {
+	color: black;
+	text-decoration: none;
 }
 
 .hero-image {
@@ -41,12 +56,6 @@
 	margin: 2em;
 }
 
-.hero-half {
-	width: 50%;
-	position: relative;
-	z-index: -1;
-}
-
 .hero-half .hero-image img {
 	margin: 0 auto;
 }
@@ -54,9 +63,13 @@
 .hero-half .hero-text {
 	text-align: center;
 	margin-top: 2em;
+	z-index: 1;
 }
 
 .hero-black {
 	background-color: black;
+}
+
+.hero-black a {
 	color: white;
 }
