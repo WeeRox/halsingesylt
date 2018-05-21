@@ -10,9 +10,17 @@ header #logo {
 
 header #logo img {
 	width: 100%;
-	max-height: calc(100% - 2em);
-	max-width: calc(100% - 2em);
+	max-height: calc(100vw - 2em);
+	max-width: calc(100vw - 2em);
 	padding: 1em;
+	background-color: white; /* to hide the span text */
+}
+
+header #logo span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 header nav {
@@ -43,15 +51,20 @@ html, body {
 }
 
 h1 {
-	font-family: 'Libre Baskerville', serif;
-	text-align: center; /* h1 is mainly used as a centered page header */
+	font-size: 1em;
+	margin: 0;
 }
 
 h2 {
 	font-family: 'Libre Baskerville', serif;
+	text-align: center; /* h2 is mainly used as a centered page header */
 }
 
 h3 {
+	font-family: 'Libre Baskerville', serif;
+}
+
+h4 {
 	font-family: 'Libre Baskerville', serif;
 }
 
