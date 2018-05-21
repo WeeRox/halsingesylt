@@ -4,11 +4,24 @@ var popup_image;
 var popup_options;
 
 $(document).ready(function() {
-	$(".card").each(function () {
-		$(this).css('top', $(this).position().top);
-		$(this).css('left', $(this).position().left);
+	$(window).resize(function() {
+		/* when the window resize, calculate the new absolute positions */
+
+		$(".card").each(function() {
+			$(this).css('position', 'static');
+		});
+
+		$(".card").each(function () {
+			$(this).css('top', this.getBoundingClientRect().top);
+			$(this).css('left', this.getBoundingClientRect().left);
+		});
+
+		$(".card").each(function() {
+			$(this).css('position', 'absolute');
+		});
 	});
 
+	$(window).trigger('resize');
 
 	$(".popup").on('click.show', function() {
 
