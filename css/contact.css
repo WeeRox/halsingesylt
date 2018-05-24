@@ -2,40 +2,52 @@ main {
 	display: flex;
 }
 
-#message, #map {
+#contact-form, #map {
 	flex: 1;
 	margin: 2em;
-	font-size: 11px; /* make sure that 1 em is same size for both */
 }
 
 #map iframe {
-	height: 32em;
+	height: 28.5em;
 	width: 100%;
 	margin: 1em 0;
 	border: none;
 }
 
+.form-element {
+	position: relative;
+}
+
+.form-element-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1em;
+	transition: all .2s ease-in-out;
+}
+
+.form-element-label-floating {
+	transform: translateY(-50%) scale(.9);
+	padding: 0 .5em;
+	margin: 0 .5em;
+	background-color: white;
+}
+
 input, textarea {
 	display: block;
 	width: calc(100% - 2em);
-	height: 2em;
-	background-color: #78909C;
-	color: white;
-	border: none;
+	height: 1.5em;
+	border: 2px solid #9E3223;
 	margin: 1em 0;
 	padding: 1em;
 	box-sizing: content-box;
 	font-family: 'Poppins', sans-serif;
-}
-
-/* change placeholder color and opacity */
-input::placeholder, textarea::placeholder {
-	color: white;
-	opacity: 0.5;
+	outline: none;
 }
 
 textarea {
 	height: 15em;
+	resize: none;
 }
 
 input[type=submit] {

@@ -6,6 +6,8 @@
 		<link href="/css/main.css" type="text/css" rel="stylesheet">
 		<link href="/css/contact.css" type="text/css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poppins" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="/js/contact.js"></script>
 	</head>
 	<body>
 		<header>
@@ -24,11 +26,20 @@
 		</header>
 		<h2>Kontakta oss</h2>
 		<main>
-			<div id="message">
+			<div id="contact-form">
 				<form>
-					<input type="text" placeholder="Namn">
-					<input type="email" placeholder="Email">
-					<textarea placeholder="Meddelande"></textarea>
+					<div class="form-element">
+						<label class="form-element-label" for="name">Namn</label>
+						<input id="name" type="text">
+					</div>
+					<div class="form-element">
+						<label class="form-element-label" for="email">Email</label>
+						<input id="email" type="email">
+					</div>
+					<div class="form-element">
+						<label class="form-element-label" for="message">Meddelande</label>
+						<textarea id="message"></textarea>
+					</div>
 					<input type="submit" value="Skicka">
 				</form>
 			</div>
